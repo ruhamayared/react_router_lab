@@ -21,3 +21,7 @@ code {
 .nav a {
   color: white;
 }
+
+.span {
+  text-decoration: underline;
+}

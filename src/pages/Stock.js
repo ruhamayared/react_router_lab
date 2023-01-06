@@ -4,7 +4,7 @@ const Stock = (props) => {
   const stock = useLoaderData()
 
   return (
-    <div>
+    <div className="stock">
       <h1>{stock[0].companyName}</h1>
       <h2>
         {stock[0].symbol} - {stock[0].exchangeShortName}

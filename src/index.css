@@ -5,6 +5,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::after {
+  content: "";
+  background: url("https://i.imgur.com/RgLtwox.jpg");
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -13,7 +25,7 @@ code {
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(64, 130, 201);
+  background-color: rgb(30, 63, 98);
   padding: 15px;
   font-size: 2em;
 }
@@ -24,4 +36,38 @@ code {
 
 .span {
   text-decoration: underline;
+}
+
+.home {
+  margin: 230px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  font-size: 2em;
+}
+
+.about {
+  margin: 230px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+.stocks {
+  margin-top: 100px;
+}
+
+.stocks a{
+  color: white;
+}
+
+.stock{
+  width: 350px;
+  margin: 230px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  border-radius: 3%;
+  position: relative;
+  display: block;
 }

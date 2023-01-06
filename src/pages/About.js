@@ -1,5 +1,12 @@
 const About = (props) => {
-  return <h1>This is the About Page</h1>
+  return (
+    <div className="about">
+      <h1>
+        The stock app allows users to browse through the most active stocks and get basic
+        information on each stock.
+      </h1>
+    </div>
+  )
 }
 
 export default About

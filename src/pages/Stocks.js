@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom"
 import stocks from "../data"
+import { Flex, Card } from "../styles"
 
 const Stocks = (props) => {
   return (
     <div className="stocks">
-      {stocks.map((stock) => {
-        const { name, symbol } = stock
+      <Flex>
+        {stocks.map((stock) => {
+          const { name, symbol } = stock
 
-        return (
-          <Link to={`/stocks/${symbol}`}>
-            <h2>{name}</h2>
-          </Link>
-        )
-      })}
+          return (
+            <Card>
+              <Link to={`/stocks/${symbol}`}>
+                <h2>{name}</h2>
+              </Link>
+            </Card>
+          )
+        })}
+      </Flex>
     </div>
   )
 }

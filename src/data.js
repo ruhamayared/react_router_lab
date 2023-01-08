@@ -53,6 +53,15 @@ const stocks = [
     low: 36.125,
     open: 36.58,
   },
+  {
+    name: "Intel Corporation",
+    symbol: "INTC",
+    lastPrice: 36.16,
+    change: -0.370000000000005,
+    high: 36.78,
+    low: 36.125,
+    open: 36.58,
+  },
 ]
 
 export default stocks
